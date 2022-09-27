@@ -1,4 +1,4 @@
-import React,{usestate,useEfffect, useEffect} from "react";
+// import React,{usestate,useEfffect, useEffect} from "react";
 
 import './App.css';
 
@@ -10,20 +10,20 @@ import About from './components/UI/About';
 
 function App() {
 
-  const [theme, setTheme] = useState('');
+  // const [theme, setTheme] = useState('');
   
-  const toggleTheme = () => {
-    theme === "" ? setTheme('light-theme') : setTheme('');
-  }
+  // const toggleTheme = () => {
+  //   theme === "" ? setTheme('light-theme') : setTheme('');
+  // }
 
-  useEffect(()=>{
-    document.body.className = theme;
-  },[theme]);
+  // useEffect(()=>{
+  //   document.body.className = theme;
+  // },[theme]);
 
   return (
     <>
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      <Hero theme={theme} /> 
+      <Header />
+      <Hero /> 
       <Counter />
       <Services />
       <About />
