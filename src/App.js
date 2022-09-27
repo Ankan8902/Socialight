@@ -1,4 +1,4 @@
-// import React,{usestate,useEfffect, useEffect} from "react";
+import React,{useState,useEffect} from "react";
 
 import './App.css';
 
@@ -7,26 +7,29 @@ import Hero from "./components/UI/Hero";
 import Counter from './components/UI/counter';
 import Services from './components/UI/Services';
 import About from './components/UI/About';
+import Work from "./components/UI/Work";
 
 function App() {
 
-  // const [theme, setTheme] = useState('');
+  const [theme, setTheme] = useState('')
   
-  // const toggleTheme = () => {
-  //   theme === "" ? setTheme('light-theme') : setTheme('');
-  // }
+  const toggleTheme = () => {
+    theme === "" ? setTheme('light-theme') : setTheme('');
+  }
 
-  // useEffect(()=>{
-  //   document.body.className = theme;
-  // },[theme]);
+  useEffect(()=>{
+    document.body.className = theme;
+  },[theme]);
 
   return (
     <>
-      <Header />
-      <Hero /> 
+      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Hero theme={theme} /> 
       <Counter />
       <Services />
       <About />
+      <Work />
+
     </>
   );
 }

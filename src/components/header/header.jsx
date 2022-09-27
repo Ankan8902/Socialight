@@ -56,7 +56,7 @@ const Header = ({theme, toggleTheme}) => {
                         {/* =================== light mode =====================*/}
                         <div className="light__mode">
                             <span onClick={toggleTheme}>
-                                {theme === 'lightTheme' ? (
+                                {theme === 'light-theme' ? (
                                     <span>
                                         <i class="ri-moon-line"></i>Dark
                                     </span>
@@ -65,9 +65,6 @@ const Header = ({theme, toggleTheme}) => {
                                         <i class="ri-sun-line"></i>Light
                                     </span>
                                 )}
-                            </span>
-                            <span>
-                                <i className="ri-sun-line"></i> Light Mode
                             </span>
                         </div>
                     </div>
