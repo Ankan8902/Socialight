@@ -18,7 +18,7 @@ function App() {
   }
 
   useEffect(()=>{
-    document.body.className = theme;
+    document.body.className = theme
   },[theme]);
 
   return (

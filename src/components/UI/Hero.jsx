@@ -7,7 +7,7 @@ import lightImg from '../../images/light-hero-bg.jpg'
 
 const Hero = ({theme}) => {
   return (
-    <section className="hero__section">
+    <section className="hero__section" id='home'>
         <div className="container">
             <div className="hero__wrapper">
                 <div className="hero__content">
@@ -25,7 +25,8 @@ const Hero = ({theme}) => {
                 </div>
                 
                 <div className="hero__img">
-                    <img src={theme==='light-theme' ? lightImg : heroDarkImg} alt="hero-img" />
+                    <img src={theme==='light-theme' ? lightImg : heroDarkImg} 
+                    alt="hero-img" />
                 </div>
             </div>
         </div>
