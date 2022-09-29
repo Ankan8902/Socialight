@@ -8,6 +8,7 @@ import Counter from './components/UI/counter';
 import Services from './components/UI/Services';
 import About from './components/UI/About';
 import Work from "./components/UI/Work";
+import Testimonial from "./components/UI/Testimonial";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Services />
       <About />
       <Work />
+      <Testimonial />
 
     </>
   );
