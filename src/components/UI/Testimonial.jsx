@@ -20,8 +20,8 @@ const Testimonial = () => {
     swipeToSlide: true,
   };
   return (
-    <section>
-      <div className="container">
+    <section id="testimonial" className='testimonial'>
+      <div className="container" id='container'>
         <div className="slider__content-top">
           <h6 className="subtitle">Our Reviews</h6>
           <h2>
