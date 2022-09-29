@@ -19,17 +19,12 @@ const nav__links =[
     },
 
     {
-        path:'#pricing',
-        display:'Pricing'
-    },
-
-    {
         path:'#contact us',
         display:'Contact us'
     },
 ]
 
-const Header = ({theme, toggleTheme}) => {
+const Header = () => {
 
     const headerRef = useRef(null)
 
@@ -85,7 +80,7 @@ const Header = ({theme, toggleTheme}) => {
                         </div>
 
                         {/* =================== light mode =====================*/}
-                        <div className="light__mode">
+                        {/* <div className="light__mode">
                             <span onClick={toggleTheme}>
                                 {theme === 'light-theme' ? (
                                     <span>
@@ -97,7 +92,7 @@ const Header = ({theme, toggleTheme}) => {
                                     </span>
                                 )}
                             </span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

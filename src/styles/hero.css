@@ -56,5 +56,7 @@
 }
 
 .secondary__btn{
-    background: var(--btn-primary-bg);
-}
+    border: 1px solid var(--primary-color);
+    color: #090238;
+    font-weight: 600;
+  }

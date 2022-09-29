@@ -60,10 +60,10 @@
 }
 
 .choose__us-title {
-    color: #fff;
+    color: #0c123d !important;
     font-weight: 500;
 }
 
-.light-theme .choose__us-title {
+/* .light-theme .choose__us-title {
     color: #0c123d !important;
-}
+} */

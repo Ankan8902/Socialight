@@ -2,10 +2,10 @@ import React from 'react'
 import '../../styles/hero.css'
 import '../../App.css'
 
-import heroDarkImg from '../../images/hero-img.png'
+
 import lightImg from '../../images/light-hero-bg.jpg'
 
-const Hero = ({theme}) => {
+const Hero = () => {
   return (
     <section className="hero__section" id='home'>
         <div className="container">
@@ -25,7 +25,7 @@ const Hero = ({theme}) => {
                 </div>
                 
                 <div className="hero__img">
-                    <img src={theme==='light-theme' ? lightImg : heroDarkImg} 
+                    <img src={lightImg} 
                     alt="hero-img" />
                 </div>
             </div>

@@ -32,19 +32,20 @@
     border-radius: 5px;
     margin-bottom: 30px;
     border: 1px solid var(--primary-color);
-}
-
-.light-theme .work__icon {
     background-color: var(--primary-color);
 }
 
-.light-theme .work__icon i{
+/* .light-theme .work__icon {
+    background-color: var(--primary-color);
+} */
+
+/* .light-theme .work__icon i{
     color: #fff;
-}
+} */
 
 .work__icon i{
     font-size: 2rem;
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .work__title{
