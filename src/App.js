@@ -10,6 +10,7 @@ import About from './components/UI/About';
 import Work from "./components/UI/Work";
 import Testimonial from "./components/UI/Testimonial";
 import Newsletter from "./components/UI/Newsletter";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       <Work />
       <Testimonial />
       <Newsletter />
+      <Footer />
 
     </>
   );
