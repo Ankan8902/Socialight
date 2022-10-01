@@ -53,3 +53,34 @@
     font-size: 1.3rem;
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width:992px){
+    .work__top-content h2{
+        font-size: 1.5rem;
+    }
+
+    .work__item-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .work__item{
+        width: 31%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .work__item{
+        width: 47.7%;
+    }
+
+    .work__title{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .work__item{
+        width: 100%;
+    }
+}

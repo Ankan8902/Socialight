@@ -120,7 +120,7 @@ a{
 }
 
 @media only screen and (max-width:768px) {
-section {
+ .section {
   padding: 40px 0px;
   }
 }

@@ -96,8 +96,9 @@ const Header = () => {
                             </span>
                         </div> */}
 
-                        <div className="mobile__menu" onClick={toggleMenu}>
-                            <i className="ri-menu-line"></i></div>
+                        <span className="mobile__menu" onClick={toggleMenu}>
+                            <i className="ri-menu-line"></i>
+                        </span>
                     </div>
                 </div>
             </div>

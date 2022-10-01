@@ -24,7 +24,7 @@ const workData = [
 
 const Work = () => {
   return (
-    <section className="work" id='top'>
+    <section className="work" id='work'>
         <div className="container">
             <div className="work__top-content">
                 <h6 className="subtitle">Our work</h6>

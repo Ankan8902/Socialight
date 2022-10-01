@@ -70,7 +70,7 @@
 
   @media only screen and (max-width: 768px){
     .hero__content h2{
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         line-height: 45px;
     }
 
@@ -84,10 +84,11 @@
   }
 
   @media only screen and (max-width: 600px){
-    .hero__content .hero__img{
+    .hero__content, 
+    .hero__img{
         width: 100%;
     }
-    hero__wrapper{
-        flex-direction: column;
+    .hero__wrapper{
+        flex-direction:column;
     }
   }
