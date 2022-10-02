@@ -80,17 +80,37 @@
         flex-direction: column;
     }
 
-    .about__content,
-    .about__img{
-        width: 100%;
-    }
-
-    .about__img img{
-        height: 500px !important;
-    }
-
     .about__content{
+        width: 100%;
+        padding-top: 0px;
         margin-bottom: 30px;
     }
 
+    .about__img{
+        display: none;
+    }
+
+    .about{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* .about__content h6,
+    h2{
+        text-align: center;
+    } */
+
+    #subtitle,#clients,#challenges{
+        text-align: center;
+    }
+
+    .choose__us-icon{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .choose__us-item{
+        text-align: center;
+        display: list-item;
+    }
 }

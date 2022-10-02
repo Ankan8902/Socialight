@@ -15,9 +15,10 @@ const Newsletter = () => {
 
                 <div className="newsletter__form">
                     <input type="name" placeholder='Name' className='name'/>
-                    <input type="email" placeholder='Email' className='email'/>
-                    <input type="feedback" placeholder='Feedback' className='feedback'/>
-                    <button className='secondary__btn' id='btn'>Submit feedback</button>
+                    <input type="personal email" placeholder='Personal Email' className='pemail'/>
+                    <input type="buisness email" placeholder='Buisness Email' className='bemail'/>
+                    <input type="contact" placeholder='Contact No.' className='contact'/>
+                    <button className='secondary__btn' id='btn'>Submit</button>
                 </div>
             </div>
         </div>

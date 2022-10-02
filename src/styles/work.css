@@ -83,4 +83,9 @@
     .work__item{
         width: 100%;
     }
+
+    .work{
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
 }

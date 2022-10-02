@@ -75,11 +75,21 @@
 }
 
 @media only screen and (max-width:576px){
+    .footer{
+        padding-top: 0px;
+    }
+
     .footer__quick-links{
         width: 47%;
     }
 
     .footer__logo{
         width: 47%;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width: 1024px){
+    .footer{
+        padding-top: 142px;
     }
 }

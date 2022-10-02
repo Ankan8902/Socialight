@@ -84,10 +84,19 @@
   }
 
   @media only screen and (max-width: 600px){
-    .hero__content, 
-    .hero__img{
+    .hero__content{
         width: 100%;
+        padding: 0px;
     }
+    
+    .hero__img{
+        display: none;
+    }
+
+    .hero__section{
+        padding-top: 16px;
+    }
+
     .hero__wrapper{
         flex-direction:column;
     }

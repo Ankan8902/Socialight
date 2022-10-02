@@ -50,9 +50,9 @@
     background: #c9f4fd;
 } */
 
-#container{
+/* #container{
     background: #e8e8e8;
-}
+} */
 
 @media only screen and (max-width:992px) {
     .slider__content-top h2{
@@ -67,5 +67,10 @@
 
     .customer__name{
         font-size: 1rem;
+    }
+
+    .testimonial{
+        padding-top: 0px;
+        padding-bottom: 30px;
     }
 }

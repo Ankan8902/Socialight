@@ -84,4 +84,9 @@
     .services__item{
         width: 100%;
     }
+
+    .service{
+        padding-bottom: 0px;
+    }
+    
 }
