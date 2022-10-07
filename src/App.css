@@ -86,6 +86,7 @@ section{
   color: var(--small-text-color) !important;
   line-height: 30px;
   font-size: 0.9rem;
+  text-align: justify;
 }
 
 .subtitle {
