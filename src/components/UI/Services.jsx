@@ -14,11 +14,11 @@ const serviceData = [
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo explicabo cupiditate illum molestiae, et porro. Molestiae quidem fuga repellendus?'
     },
 
-    {
-        icon: 'ri-landscape-line',
-        title: 'Graphic Development',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo explicabo cupiditate illum molestiae, et porro. Molestiae quidem fuga repellendus?'
-    },
+    // {
+    //     icon: 'ri-landscape-line',
+    //     title: 'Graphic Development',
+    //     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo explicabo cupiditate illum molestiae, et porro. Molestiae quidem fuga repellendus?'
+    // },
 
     {
         icon: 'ri-rocket-line',

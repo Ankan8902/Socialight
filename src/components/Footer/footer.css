@@ -1,12 +1,16 @@
 .footer{
     padding: 60px 0px;
-    background: aqua;
+    background: var(--counter-section-bg);
 }
 
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
     column-gap: 2.5rem;
+    background: var(--counter-color);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer__logo {
@@ -52,7 +56,7 @@
 }
 
 .copyright{
-    color: #555;
+    color: black;
     margin-top: 40px;
     text-align: center;
     font-size: 0.9rem;
