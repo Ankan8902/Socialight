@@ -50,15 +50,16 @@
 } */
 
 .newsletter{
-    /* background: linear-gradient(
+    background: linear-gradient(
         180deg,
         rgba(189,243,255,1) 29%,
         rgba(193,243,255,1) 50%,
         rgba(226,250,255,1) 78%
-    ); */
+    );
     /* height: 550px; */
     padding: 60px 0px;
     text-align: -webkit-center;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width:992px){

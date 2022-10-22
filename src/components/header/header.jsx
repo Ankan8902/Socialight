@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from "react";
 
 import './header.css';
+// import { NavLink } from "react-router-dom";
 
 const nav__links =[
     {
@@ -19,7 +20,7 @@ const nav__links =[
     },
 
     {
-        path:'#contact',
+        path:'/contact',
         display:'Contact us'
     },
 ]
@@ -46,16 +47,20 @@ const Header = () => {
     },[]);
 
     const handleClick = e => {
-        e.preventDefault()
+        
 
         const targetAttr = e.target.getAttribute("href")
 
         const location=document.querySelector(targetAttr).offsetTop;
+        if(location){
 
+        
+        e.preventDefault()
         window.scrollTo({
             left: 0,
             top: location -80,
         });
+        }
     };
 
     const toggleMenu = ()=> menuRef.current.classList.toggle('menu__active')

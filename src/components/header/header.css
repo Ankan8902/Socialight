@@ -29,8 +29,9 @@
 }
 
 .logo h2{
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
+
 
 /* .light__mode span{
     color: rgba(255, 255, 255, 0.637);

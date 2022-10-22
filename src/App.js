@@ -1,19 +1,17 @@
-import React,{useState,useEffect} from "react";
-
-import './App.css';
-
-import Header from "./components/header/header";
-import Hero from "./components/UI/Hero";
-import Counter from './components/UI/counter';
-import Services from './components/UI/Services';
+import React,{useEffect,useState} from 'react'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Contact from './components/UI/Contact';
+import Home from './Home'
 import About from './components/UI/About';
-import Work from "./components/UI/Work";
-import Testimonial from "./components/UI/Testimonial";
-import Newsletter from "./components/UI/Newsletter";
+import Service from './components/UI/Services';
+import Header from "./components/header/header";
 import Footer from "./components/Footer/Footer";
 
-function App() {
-
+const App = () => {
   const [theme, setTheme] = useState('')
   
   const toggleTheme = () => {
@@ -23,21 +21,23 @@ function App() {
   useEffect(()=>{
     document.body.className = theme
   },[theme]);
-
   return (
     <>
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      <Hero theme={theme} /> 
-      <Counter />
-      <Services />
-      <About />
-      <Work />
-      <Testimonial />
-      <Newsletter />
-      <Footer />
-
+      <BrowserRouter>
+        <Header theme={theme} toggleTheme={toggleTheme} />
+        <Routes>
+          <Route path="/">
+            <Route path='/' element={<Home />} />
+            <Route path='#home' element={<Home />}/>
+            <Route path='#service' element={<Service />}/>
+            <Route path='#about' element={<About />}/>
+            <Route path="/contact" element={<Contact />}/>
+          </Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

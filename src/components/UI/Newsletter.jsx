@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/newsletter.css'
+import { Link } from "react-router-dom";
 
 const Newsletter = () => {
   return (
@@ -25,18 +26,18 @@ const Newsletter = () => {
             <div className="newsletter__top-content">
                 <h6 className="subtitle">Let's Connect</h6>
                 <h2>
-                    Give us your valuable
+                    Thinking of new ways to scale your buisness in the new normal?
                 </h2>
-                <h2 className='highlight'>Feedback</h2>
+                <p>Increase your <span className='highlight'>team's productivity</span> and collaboration with the right software solutions</p>
             </div>
 
             <div className="newsletter__form">
-                <input type="name" placeholder='Name' className='name'/>
+                {/* <input type="name" placeholder='Name' className='name'/>
                 <input type="buisness name" placeholder='Buisness Name' className='pemail'/>
                 <input type="buisness email" placeholder='Buisness Email' className='bemail'/>
-                <input type="contact" placeholder='Contact No.' className='contact'/>
+                <input type="contact" placeholder='Contact No.' className='contact'/> */}
             </div>
-            <button className='secondary__btn' id='btn'>Submit</button>
+            <Link to="contact" className='secondary__btn' id='btn'>REQUEST A CALL BACK</Link>
         </div>
     </section>
   )
