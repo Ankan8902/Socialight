@@ -55,6 +55,10 @@
     margin-bottom: 30px;
 }
 
+#desc{
+    margin-bottom: 15px;
+}
+
 @media only screen and (max-width:992px){
     .services__top-content h2{
         font-size: 1.5rem;

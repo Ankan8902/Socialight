@@ -23,6 +23,21 @@ const nav__links =[
         path:'/contact',
         display:'Contact us'
     },
+
+    // {
+    //     path: '/services1',
+    //     display: 'App Dev'
+    // },
+
+    // {
+    //     path: '/services2',
+    //     display: 'Web Dev'
+    // },
+
+    // {
+    //     path: '/services3',
+    //     display: 'Digital Marketing'
+    // },
 ]
 
 const Header = () => {
