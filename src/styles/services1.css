@@ -1,0 +1,25 @@
+
+/* .app__img{
+    overflow: hidden;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+} */
+
+#app{
+    padding-top: 5px;
+}
+
+.app__img img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.app__top-content{
+    text-align: center;
+    margin-bottom: 50px;
+}

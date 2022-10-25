@@ -1,0 +1,15 @@
+#digital{
+    padding-top: 5px;
+}
+
+.digital__img img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.digital__top-content{
+    text-align: center;
+    margin-bottom: 50px;
+}
