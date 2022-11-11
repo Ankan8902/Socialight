@@ -3,7 +3,7 @@ import '../../styles/hero.css'
 import '../../App.css'
 
 
-import lightImg from '../../images/light-hero-bg.jpg'
+import lightImg from '../../images/home-page.jpg'
 
 const Hero = () => {
   return (

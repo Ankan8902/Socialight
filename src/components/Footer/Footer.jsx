@@ -1,116 +1,106 @@
 import React from 'react'
 import './footer.css'
+import {Link} from 'react-router-dom'
+// import {MenuItems} from '../UI/MenuItems'
 
-const quickLinks01 =[
-    {
-        path:'#',
-        display: 'Marketing'
-    },
-
-    {
-        path:'#',
-        display: 'Analytics'
-    },
-
-    {
-        path:'#',
-        display: 'Commerce'
-    },
-]
-
-const quickLinks02 =[
-    {
-        path:'#',
-        display: 'Quotes'
-    },
-
-    {
-        path:'#',
-        display: 'Documentation'
-    },
-
-    {
-        path:'#',
-        display: 'Guides'
-    },
-]
-
-const quickLinks03 =[
-    {
-        path:'#about',
-        display: 'About'
-    },
-
-    {
-        path:'#',
-        display: 'Jobs'
-    },
-
-    {
-        path:'#work',
-        display: 'Work'
-    },
-]
 
 
 
 const Footer = () => {
 
-    const year = new Date().getFullYear()
   return (
-    <footer className="footer">
-        <div className="container">
-            <div className="footer__wrapper">
-                <div className="footer__logo">
-                    <h2>Socialight</h2>
-                    <p className="description">Grow with us</p>
-
-                    <p className="small__text description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis eius nemo ipsa, doloremque ducimus pariatur ab! Dicta, iste quibusdam?</p>
+    <>
+        <footer>
+            <div className="container padding">
+                <div className="box logo">
+                <Link to='/' className='footer-logo'>
+                Socialight <i className='fab fa-firstdraft' />
+                </Link>
+                <div>Grow with us</div>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <i className="fab fa-facebook-f icon"></i>
+                <i className="fab fa-instagram icon"></i>
+                <i className="fab fa-twitter icon"></i>
                 </div>
-
-                <div className="footer__quick-links">
-                    <h3 className="quick__links-title">Solutions</h3>
-                    <ul className="quick__links">
-                        {
-                            quickLinks01.map((item, index) => (
-                                <li className="quick__link-item" key={index}>
-                                    <a href={item.path}>{item.display}</a>
-                                </li>
-                            ))
-                        }
+                <div className="box link">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li>
+                            <Link to='/About'>
+                                About us
+                            </Link>
+                        </li>
+                        <li>Marketing</li>
+                        <li>Analytics</li>
+                        <li>Commerce</li>
                     </ul>
                 </div>
-
-                <div className="footer__quick-links">
-                    <h3 className="quick__links-title">Support</h3>
-                    <ul className="quick__links">
-                        {
-                            quickLinks02.map((item, index) => (
-                                <li className="quick__link-item" key={index}>
-                                    <a href={item.path}>{item.display}</a>
-                                </li>
-                            ))
-                        }
+                <div className="box link">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <Link to='/contact'>
+                                Contact us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/faq'>
+                                FAQ
+                            </Link>
+                        </li>
+                        <li>Privacy Policy</li>
+                        <li>Terms</li>
                     </ul>
                 </div>
-
-                <div className="footer__quick-links">
-                    <h3 className="quick__links-title">Company</h3>
-                    <ul className="quick__links">
-                        {
-                            quickLinks03.map((item, index) => (
-                                <li className="quick__link-item" key={index}>
-                                    <a href={item.path}>{item.display}</a>
-                                </li>
-                            ))
-                        }
+                <div className="box link">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>
+                            <Link to='/website'>
+                                Website
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/app'>
+                                App
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/CRM'>
+                                CRM
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/POS'>
+                                POS
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="box last">
+                    <h3>Have a Questions?</h3>
+                    <ul>
+                        <li>
+                            <i className="fa fa-map"></i>
+                            203 Fake ST. Mount View , san francisio california ,USA
+                        </li>
+                        <li>
+                            <i className="fa fa-phone-alt"></i>
+                            +123 456 7897
+                        </li>
+                        <li>
+                            <i className="fa fa-paper-plane"></i>
+                            example@gmail.com
+                        </li>
                     </ul>
                 </div>
             </div>
-
-            <p className="copyright">Copyright {year}, Terms and Conditions. All rights reserved.{" "}</p>
+        </footer>
+        <div className="legal">
+            <p>Copyright @2022 All rights reserved | Terms and Conditions</p>
         </div>
-    </footer>
+
+    </>
   )
 }
 
